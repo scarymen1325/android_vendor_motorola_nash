@@ -218,7 +218,8 @@ android_app_import {
 	name: "MotCamera2",
 	owner: "motorola",
 	apk: "proprietary/priv-app/MotCamera2/MotCamera2.apk",
-	certificate: "OVERRIDES=Camera2",
+	overrides: ["Camera2", "Snap"],
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
